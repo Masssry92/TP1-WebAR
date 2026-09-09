@@ -3,14 +3,18 @@
   <head>
     <title>TP01 - WebAR</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@1.0.0/dist/aframe-look-at-component.min.js"></script>
   </head>
   <body>
     <a-scene>
-        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
 
-       <a-box position="-3 2 -1" color="#E63946" width="1" height="1" depth="1"></a-box>
-       <a-box position="0 2 1" color="#2A9D8F" width="1" height="1" depth="1"></a-box>
-       <a-box position="3 2 -1" color="#457B9D" width="1" height="1" depth="1"></a-box>
+      <a-box position="-3 2 -1" color="#E63946" width="1" height="1" depth="1"></a-box>
+      <a-box position="0 2 1" color="#2A9D8F" width="1" height="1" depth="1"></a-box>
+      <a-box position="3 2 -1" color="#457B9D" width="1" height="1" depth="1"></a-box>
+
+      <a-entity camera position="0 10 15" look-at="0 0 0"></a-entity>
+
 
       
     </a-scene>
